@@ -1,29 +1,16 @@
 # Changelog
-_These releases contain markup changes and potentially breaking changes. <br>
-A :warning: icon indicates where we've made a change that might be a breaking change for your project. <br>
-A :pushpin: icon indicates a markup change that is not a breaking change._
+_These releases contain markup changes and potentially breaking changes.
+A :warning: icon indicates where we've made a change that might be a breaking change for your project._ 
 
-## 1.1.0
+## v1.1.0
 January 1, 2022
-<!--
-Include:
-- Benefit statement
-- Brief description of the update
-- Use consistent, active verbs like "Fixed", "Added", "Improved" to indicate the type of change
-- Present items in order of category: Bug fixes, enhancements, new features, deprecations
-- Make content scannable by using nested list items 
-Ex: ** **
--->
 
 ### General
 - Fixed the baseline alignment in the unstyled button variant. (#4812)
 - Added a LinkedIn icon and included it in our default icon sprite as `linkedin`. (#4812)
-- Added type="button" to all non-form buttons to prevent default submit behaviors. (#4812)
-    - This allowed us to remove preventDefault() from the relevant component JS.
-    - :warning: This is a potentially breaking change. Teams should update all non-form buttons to include type="button" in their markup. <button> elements that do not receive a defined type attribute will inherit type="submit" behaviors by default. This can cause unintended and undesired behavior in our buttons. Resource: Details on button types (Mozilla) (#4695)
-- Updated markup in the usa-password package to use a <button> element instead of an anchor element. (#4847)
+- Updated markup in the usa-password package to use a `<button>` element instead of an anchor element. (#4847)
     - This markup is more semantically appropriate for the related on-page user interaction.
-    - :pushpin: This is not a breaking change. The old markup is still supported, but teams should consider updating to the new markup for improved semantics. 
+    - :warning: This is not a breaking change. The old markup is still supported, but teams should consider updating to the new markup for improved semantics. 
         #### Old
         ```
         <p class="usa-form__note">
@@ -51,6 +38,7 @@ Ex: ** **
 
 ### Dependency updates
 _No dependency updates_
+    
 0 vulnerabilities in regular dependencies (dependencies for USWDS projects installed with npm install uswds)
 
 Internal only: 3 moderate, 32 high vulnerabilities in devDependencies (development dependencies)
