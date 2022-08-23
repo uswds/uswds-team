@@ -1,7 +1,6 @@
 # Changelog
-_These releases contain markup changes and potentially breaking changes.
-A :warning: icon indicates a change that might be a breaking change for your project.
-A :pushpin: icon indicates a markup change that is not a breaking change._
+_These releases can contain markup changes and potentially breaking changes.
+A :warning: icon indicates a change that might be a breaking change for your project._
 
 ## [Version #]
 <!-- 
@@ -24,16 +23,16 @@ Create an itemized list of all user-affected changes using the following format:
 ```
 Whenever possible, change items should:
 - Include a brief description of the update that focuses on user benefit
-- Include a link to the related PR
+- Use a consistent set of verbs to begin each statement. 
+  Examples: "Fixed", "Added", "Improved", "Optimized", "Updated" at the start of the summary helps indicate change type
 - Use plain language and be human-readable.
-- Use a consistent set verbs to begin each statement. 
-  Examples: "Fixed", "Added", "Improved", "Optimized" at the start of the summary helps indicate change type
 - Make content scannable by keeping lines short
+- Include a link to the related PR
 - Be categorized under the appropriate section headings, found below.
 -->
 
-<!-- Uncomment each section as needed. 
-If you are not sure how to categorize an item, put it inside the `General` section.
+<!-- Uncomment each category heading as needed. 
+If it isn't clear how to categorize an item, put it inside the `General` section.
 
 ### General
 
