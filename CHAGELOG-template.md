@@ -8,13 +8,14 @@ Every release should have an entry.
 Releases should be listed in reverse chronological order, with the newest release listed first 
 -->
 
-[Date]
+[Release date]
 <!-- 
 Include the date the version was released.
 The date should be in the following format: January 1, 2000 -->
 
+[Itemized list of all user-affected changes]
 <!--
-Create an itemized list of all user-affected changes using the following format:
+Example format:
 ```
 - Summarize the change with a brief statement (#[Related PR])
   - If necessary, describe the change in more detail in a nested list item. Not every change needs a description. 
