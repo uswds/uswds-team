@@ -5,13 +5,13 @@ A :warning: icon indicates a change that might be a breaking change for your pro
 ## [Version #]
 <!-- 
 Every release should have an entry.
-Releases should be listed in reverse chronological order, with the newest release listed first 
+Releases should be listed in reverse chronological order, with the newest release listed first.
 -->
 
 [Release date]
 <!-- 
 Include the date the version was released.
-The date should be in the following format: January 1, 2000 -->
+The date should be in the following format: January 1, 2000. -->
 
 [Itemized list of all user-affected changes]
 <!--
@@ -20,20 +20,20 @@ Example format:
 - [Brief statement that summarizes the change] (#[Related PR])
   - [Optional 1-2 sentence description included in a nested list item.]
   - [:warning: Summary of breaking or markup updates 
-    with explanation of what action the user must take.
+    with explanation of what action the user must take
     These items must be flagged with a :warning: icon at the start of the statement.]
 ```
 Whenever possible, change items should:
 - Include a brief description of the update that focuses on user benefit
-- Use a consistent set of verbs to begin each statement. 
+- Use a consistent set of verbs to begin each statement
   Examples: "Fixed", "Added", "Improved", "Optimized", "Updated" at the start of the summary helps indicate change type
-- Use plain language and be human-readable.
+- Use plain language and be human-readable
 - Make content scannable by keeping lines short
 - Include a link to the related PR
-- Be categorized under the appropriate section headings, found below.
+- Be categorized under the appropriate section headings, found below
 -->
 
-<!-- Uncomment each category heading as needed. 
+<!-- Categorize items into the following section headings.
 If it isn't clear how to categorize an item, put it inside the `General` section.
 
 ### General
