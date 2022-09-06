@@ -43,6 +43,13 @@ January 2, 2022
 
 - Fixed the baseline alignment in the unstyled button variant. (https://github.com/uswds/uswds/pull/4812)
 
+### Dependency updates
+_No dependency updates_
+
+0 vulnerabilities in regular dependencies
+
+Release TGZ SHA-256 hash: 727a1883badb336f67f6f355e8fdf7ace9af871ca8af7dbb231b2e3cc7649a9b
+
 ## v1.0.0
 
 January 1, 2022
