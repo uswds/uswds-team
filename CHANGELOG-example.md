@@ -1,11 +1,14 @@
 # Changelog
 
-_These releases contain markup changes and potentially breaking changes.
-A :warning: icon indicates where we've made a change that might be a breaking change for your project._
+_These releases may contain breaking changes.
+A warning icon (:warning:) indicates where we've made an update that might be a breaking change for your project._
 
 ## v1.1.0
 
 January 2, 2022
+
+## General
+- Added a LinkedIn icon and included it in our default icon sprite as `linkedin`. (https://github.com/uswds/uswds/pull/4872)
 
 ### Accessibility
 
@@ -39,7 +42,6 @@ January 2, 2022
 ### Visual
 
 - Fixed the baseline alignment in the unstyled button variant. (https://github.com/uswds/uswds/pull/4812)
-- Added a LinkedIn icon and included it in our default icon sprite as `linkedin`. (https://github.com/uswds/uswds/pull/4872)
 
 ## v1.0.0
 
