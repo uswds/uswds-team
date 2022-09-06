@@ -16,13 +16,11 @@ The date should be in the following format: January 1, 2000. -->
 [Itemized list of all user-affected changes]
 <!--
 Example format:
-```
 - [Brief statement that summarizes the change] (#[Related PR])
   - [Optional 1-2 sentence description included in a nested list item.]
-  - [:warning: Summary of breaking or markup updates
-    with explanation of what action the user must take
-    These items must be flagged with a :warning: icon at the start of the statement.]
-```
+  - [:warning: Summary of breaking changes with explanation of what action the user must take.
+    These items must be flagged with a :warning: icon at the beginning of the statement.]
+
 Whenever possible, change items should:
 - Include a brief description of the update that focuses on user benefit
 - Use a consistent set of verbs to begin each statement
