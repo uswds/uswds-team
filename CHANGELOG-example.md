@@ -1,13 +1,13 @@
 # Changelog
 
-_These releases may contain breaking changes.
+_These releases contain markup changes and potentially breaking changes.
 A warning icon (:warning:) indicates where we've made an update that might be a breaking change for your project._
 
 ## v1.1.0
 
 January 2, 2022
 
-## General
+### General
 - Added a LinkedIn icon and included it in our default icon sprite as `linkedin`. (https://github.com/uswds/uswds/pull/4872)
 
 ### Accessibility
