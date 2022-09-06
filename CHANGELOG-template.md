@@ -3,13 +3,13 @@ _These releases can contain markup changes and potentially breaking changes.
 A :warning: icon indicates a change that might be a breaking change for your project._
 
 ## [Version #]
-<!-- 
+<!--
 Every release should have an entry.
 Releases should be listed in reverse chronological order, with the newest release listed first.
 -->
 
 [Release date]
-<!-- 
+<!--
 Include the date the version was released.
 The date should be in the following format: January 1, 2000. -->
 
@@ -19,7 +19,7 @@ Example format:
 ```
 - [Brief statement that summarizes the change] (#[Related PR])
   - [Optional 1-2 sentence description included in a nested list item.]
-  - [:warning: Summary of breaking or markup updates 
+  - [:warning: Summary of breaking or markup updates
     with explanation of what action the user must take
     These items must be flagged with a :warning: icon at the start of the statement.]
 ```
@@ -43,20 +43,3 @@ If it isn't clear how to categorize an item, put it inside the `General` section
 ### Accessibility
 
 -->
-
-### Dependency updates
-<!-- 
-Share any dependency updates using this example table structure:
-| Name          | Old | New   |
-| :------------ | --- | ----- |
-| concurrently  | ―   | 7.3.0 |
-
-If no updates, write `_No dependency updates_` 
--->
-
-[ ] vulnerabilities in regular dependencies
-
-Internal only: [ ]moderate, [ ] high vulnerabilities in devDependencies (development dependencies)
-
-Release TGZ SHA-256 hash:[ ]
-
