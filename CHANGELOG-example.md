@@ -1,7 +1,7 @@
 # Changelog
 
-_These releases contain markup changes and potentially breaking changes.
-A warning icon (:warning:) indicates where we've made an update that might be a breaking change for your project._
+These releases may contain markup changes and potentially breaking changes.
+A warning icon (:warning:) indicates where we've made an update that might be a breaking change for your project.
 
 ## v1.1.0
 
