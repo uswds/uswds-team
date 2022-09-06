@@ -34,12 +34,14 @@ Whenever possible, change items should:
 -->
 
 <!-- Categorize items into the following section headings.
+Sections should be presented in alphabetical order by section heading.
 If it isn't clear how to categorize an item, put it inside the `General` section.
 
 ### General
 
-### Performance
-
 ### Accessibility
 
+### Performance
+
+### Visual
 -->

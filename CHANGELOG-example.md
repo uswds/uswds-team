@@ -7,11 +7,11 @@ A :warning: icon indicates where we've made a change that might be a breaking ch
 
 January 2, 2022
 
-### General
+### Accessibility
 
-- Fixed the baseline alignment in the unstyled button variant. (https://github.com/uswds/uswds/pull/4812)
-- Added a LinkedIn icon and included it in our default icon sprite as `linkedin`. (https://github.com/uswds/uswds/pull/4872)
-- Updated markup in the usa-password package to use a `<button>` element instead of an anchor element. (https://github.com/uswds/uswds/pull/4695)
+- Added styles for `aria-disabled` to match `disabled`. (https://github.com/uswds/uswds/pull/4812)
+    - Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
+- Updated markup in the usa-password package to use a `<button>` element instead of an anchor element. (https://github.com/uswds/uswds/pull/4847)
     - This markup is more semantically appropriate for the related on-page user interaction.
     - This is not a breaking change. The old markup is still supported, but teams should consider updating to the new markup for improved semantics.
 
@@ -29,16 +29,17 @@ January 2, 2022
           aria-controls="password confirmPassword"
           data-hide-text="Hide my typing">Show my typing</button>
         ```
+
 ### Performance
 
 - Optimized the hero image. (https://github.com/uswds/uswds/pull/4812)
     - We replaced our default hero image (644 KB PNG) with an optimized image (147 KB JPG), saving 477 KB. We've also provided a next-generation image format version of the image (105 KB WEBP) as an example.
     - :warning: This is a potentially breaking change. This changes the value of $theme-hero-image. If your project uses this default hero image, you'll need to make sure to move the new asset (hero.jpg) to your project images directory.
 
-### Accessibility
+### Visual
 
-- Added styles for `aria-disabled` to match `disabled`. (https://github.com/uswds/uswds/pull/4812)
-    - Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
+- Fixed the baseline alignment in the unstyled button variant. (https://github.com/uswds/uswds/pull/4812)
+- Added a LinkedIn icon and included it in our default icon sprite as `linkedin`. (https://github.com/uswds/uswds/pull/4872)
 
 ## v1.0.0
 
