@@ -30,15 +30,24 @@ If it isn't clear how to categorize an item, put it inside the `General` section
 
 - [Brief statement that summarizes the change] (#[Related PR])
   - [Optional 1-2 sentence description included in a nested list item.]
-  - ⚠️ **User action required:** <!-- Include this section and header if this change requires user action -->
-      - [Optional summary of breaking changes with explanation of what action the user must take.]
-      - [If there are code changes that the user must update, include demonstrations of the differences with diff code snippets, shown in the example below.]
+  - ⚠️ **User action required:** <!-- Include this section and header if user action is required. -->
+      - [State clearly if the change is breaking. Provide a short summary of breaking changes with an explanation of what action the user must take.]
+      - [If there are code changes that the user must or should update, include demonstrations of the differences using the format shown in this example.]
 
-```diff
-- This line was removed.
-+ This line is added.
-This line has stayed the same.
-```
+        **Old**
+        ```
+        <p class="usa-form__note">
+          <a href="#" class="usa-show-multipassword" aria-controls="password confirmPassword"
+            data-hide-text="Hide my typing">Show my typing</a>
+        </p>
+        ```
+        **New**
+        ```
+        <button type="button"
+          class="usa-show-password usa-button usa-button--unstyled"
+          aria-controls="password confirmPassword"
+          data-hide-text="Hide my typing">Show my typing</button>
+        ```
 ]
 <!--
 Whenever possible, change items should:
@@ -56,11 +65,11 @@ Whenever possible, change items should:
 
 | Name              | Old                                     | New                      |
 | :---------------- | --------------------------------------- | ------------------------ |
-| [Dependency name] | [Previous version number or `-` if new] | [Current version number] |
+| [Updated dependency name] | [Previous version number or `-` if new] | [Current version number] |
 | [Removed dependency name] | [Previous version number] | REMOVED |
 <!--
 Share any dependency updates using the provided table structure.
-If no updates, write `_No dependency updates_`
+If no updates, write `_No dependency updates_` in place of the dependency table. 
 -->
 
 [ ] critical, [ ] high, [ ] moderate vulnerabilities in dependencies
