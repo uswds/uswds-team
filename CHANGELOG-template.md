@@ -24,12 +24,21 @@ If it isn't clear how to categorize an item, put it inside the `General` section
 ### Visual
 -->
 
-[Itemized list of all user-affected changes. Example item format:
+[Itemized list of all user-affected changes.]
+
+[Example item format:
 
 - [Brief statement that summarizes the change] (#[Related PR])
   - [Optional 1-2 sentence description included in a nested list item.]
-  - [:warning: Summary of breaking changes with explanation of what action the user must take.
-    These items must be flagged with a :warning: icon at the beginning of the statement.]
+  - ⚠️ **User action required:** <!-- Include this section and header if this change requires user action -->
+      - [Optional summary of breaking changes with explanation of what action the user must take.]
+      - [If there are code changes that the user must update, include demonstrations of the differences with diff code snippets, shown in the example below.]
+
+```diff
+- This line was removed.
++ This line is added.
+This line has stayed the same.
+```
 ]
 <!--
 Whenever possible, change items should:
@@ -39,7 +48,8 @@ Whenever possible, change items should:
 - Use plain language and be human-readable
 - Make content scannable by keeping lines short
 - Include a link to the related PR
-- Be categorized under the appropriate section headings, found below
+- Be categorized under the appropriate section headings
+- Include instructions for required user action
 -->
 
 ### Dependency updates
@@ -47,6 +57,7 @@ Whenever possible, change items should:
 | Name              | Old                                     | New                      |
 | :---------------- | --------------------------------------- | ------------------------ |
 | [Dependency name] | [Previous version number or `-` if new] | [Current version number] |
+| [Removed dependency name] | [Previous version number] | REMOVED |
 <!--
 Share any dependency updates using the provided table structure.
 If no updates, write `_No dependency updates_`
