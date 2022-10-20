@@ -37,7 +37,7 @@ January 2, 2022
 
 - Optimized the hero image. (https://github.com/uswds/uswds/pull/4812)
     - We replaced our default hero image (644 KB PNG) with an optimized image (147 KB JPG), saving 477 KB. We've also provided a next-generation image format version of the image (105 KB WEBP) as an example.
-    - :warning: This is a potentially breaking change. This changes the value of $theme-hero-image. If your project uses this default hero image, you'll need to make sure to move the new asset (hero.jpg) to your project images directory.
+    - ⚠️ **User action required:** This is a potentially breaking change. This changes the value of $theme-hero-image. If your project uses this default hero image, you'll need to make sure to move the new asset (hero.jpg) to your project images directory.
 
 ### Visual
 
