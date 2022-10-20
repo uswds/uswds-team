@@ -30,24 +30,24 @@ If it isn't clear how to categorize an item, put it inside the `General` section
 
 - [Brief statement that summarizes the change] (#[Related PR])
   - [Optional 1-2 sentence description included in a nested list item.]
-  - ⚠️ **User action required:** <!-- Include this section and header if user action is required. -->
-      - [State clearly if the change is breaking. Provide a short summary of breaking changes with an explanation of what action the user must take.]
-      - [If there are code changes that the user must or should update, include demonstrations of the differences using the format shown in this example.]
+  <-- Include these items if there is a breaking or markup change -->
+  - ⚠️ **User action required:** This is a breaking change. [Provide a short summary of breaking changes with an explanation of what action the user must take.]
+  - [If there are code changes that the user must or should update, include demonstrations of the differences using the format shown in this example.]
 
-        **Old**
-        ```
-        <p class="usa-form__note">
-          <a href="#" class="usa-show-multipassword" aria-controls="password confirmPassword"
-            data-hide-text="Hide my typing">Show my typing</a>
-        </p>
-        ```
-        **New**
-        ```
-        <button type="button"
-          class="usa-show-password usa-button usa-button--unstyled"
-          aria-controls="password confirmPassword"
-          data-hide-text="Hide my typing">Show my typing</button>
-        ```
+    **Old**
+    ```
+    <p class="usa-form__note">
+      <a href="#" class="usa-show-multipassword" aria-controls="password confirmPassword"
+        data-hide-text="Hide my typing">Show my typing</a>
+    </p>
+    ```
+    **New**
+    ```
+    <button type="button"
+      class="usa-show-password usa-button usa-button--unstyled"
+      aria-controls="password confirmPassword"
+      data-hide-text="Hide my typing">Show my typing</button>
+    ```
 ]
 <!--
 Whenever possible, change items should:
