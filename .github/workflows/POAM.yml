@@ -1,0 +1,36 @@
+name: Monthly Security POAM
+on:
+  schedule:
+    - cron: 0 0 1 * *
+
+jobs:
+  create_issue:
+    name: Create monthly POAM issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create monthly POAM issue
+        run: |
+          new_issue_url=$(gh issue create \
+            --title "$TITLE" \
+            --assignee "$ASSIGNEES" \
+            --label "$LABELS" \
+            --body "$BODY")
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          TITLE: POAM - [MONTH] '24
+          LABELS: "Role: Dev, Type: Task"
+          BODY: |
+            # Summary
+
+            POAM for [MONTH] 2024
+
+            - [ ] USWDS
+            - [ ] USWDS-Site
+            - [ ] USWDS-Sandbox
+            - [ ] USWDS-Next
+            - [ ] USWDS-Compile
+            - [ ] USWDS-Tutorial
+            - [ ] Public Sans
