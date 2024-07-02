@@ -1,4 +1,4 @@
-name: Weekly Team Sync
+name: Monthly Security POAM
 on:
   schedule:
     - cron: 0 0 1 * *
