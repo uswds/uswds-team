@@ -10,9 +10,10 @@ jobs:
     permissions:
       issues: write
     steps:
+      - name: Dynamically set DATE environment variable
+        run: echo "DATE=$(date '+%B %y')" >> $GITHUB_ENV
       - name: Create monthly POAM issue
         run: |
-          echo "DATE=$(date '+%B %y')" >> $GITHUB_ENV
           new_issue_url=$(gh issue create \
             --title "$TITLE" \
             --assignee "$ASSIGNEES" \
@@ -22,12 +23,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
-          TITLE: POAM - ${{env.DATE}}
+          TITLE: TEST - ${{ env.DATE }}
           LABELS: "Role: Dev,Type: Task"
           BODY: |
             # Summary
 
-            POAM for ${{env.DATE}}
+            POAM for ${{ env.DATE }}
 
             - [ ] USWDS
             - [ ] USWDS-Site
