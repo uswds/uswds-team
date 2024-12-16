@@ -6,12 +6,12 @@ on:
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   GH_REPO: ${{ github.repository }}
-  TITLE: TEST - ${{ env.DATE }}
+  TITLE: TEST - ${{ DATE }}
   LABELS: "Role: Dev,Type: Task,Status: Triage"
   BODY: |
     # Summary
 
-    POAM update tracker for ${{ env.DATE }}
+    POAM update tracker for ${{ DATE }}
 
     - [ ] USWDS
     - [ ] USWDS-Site
