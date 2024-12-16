@@ -11,7 +11,7 @@ jobs:
       issues: write
     steps:
       - name: Dynamically set DATE environment variable
-        run: echo "DATE=$(date '+%B %y')" >> $GITHUB_ENV
+        run: echo "DATE=$(date '+%B %Y')" >> $GITHUB_ENV
       - name: Create monthly POAM issue
         run: |
           new_issue_url=$(gh issue create \
@@ -28,12 +28,12 @@ jobs:
           BODY: |
             # Summary
 
-            POAM for ${{ env.DATE }}
+            POAM update tracker for ${{ env.DATE }}
 
             - [ ] USWDS
             - [ ] USWDS-Site
-            - [ ] USWDS-Sandbox
-            - [ ] USWDS-Next
+            - [ ] Web-Components
             - [ ] USWDS-Compile
+            - [ ] USWDS-Sandbox
             - [ ] USWDS-Tutorial
             - [ ] Public Sans
