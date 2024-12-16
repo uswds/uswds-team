@@ -19,7 +19,8 @@ jobs:
             --assignee "$ASSIGNEES" \
             --label "$LABELS" \
             --body "$BODY")
-      - uses: actions/add-to-project@v0.1.0
+      - name: Add issue to project board
+        uses: actions/add-to-project@v0.1.0
         with:
           project-url: https://github.com/orgs/uswds/projects/8
           github-token: ${{ secrets.ADD_TO_PROJECT }}
