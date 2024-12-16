@@ -3,24 +3,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  GH_REPO: ${{ github.repository }}
-  TITLE: TEST - ${{ DATE }}
-  LABELS: "Role: Dev,Type: Task,Status: Triage"
-  BODY: |
-    # Summary
-
-    POAM update tracker for ${{ DATE }}
-
-    - [ ] USWDS
-    - [ ] USWDS-Site
-    - [ ] Web-Components
-    - [ ] USWDS-Compile
-    - [ ] USWDS-Sandbox
-    - [ ] USWDS-Tutorial
-    - [ ] Public Sans
-
 jobs:
   create_issue:
     name: Create monthly POAM issue
@@ -37,6 +19,25 @@ jobs:
             --assignee "$ASSIGNEES" \
             --label "$LABELS" \
             --body "$BODY")
+            
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          TITLE: TEST - ${{ DATE }}
+          LABELS: "Role: Dev,Type: Task,Status: Triage"
+          BODY: |
+            # Summary
+        
+            POAM update tracker for ${{ DATE }}
+        
+            - [ ] USWDS
+            - [ ] USWDS-Site
+            - [ ] Web-Components
+            - [ ] USWDS-Compile
+            - [ ] USWDS-Sandbox
+            - [ ] USWDS-Tutorial
+            - [ ] Public Sans
+    
       - name: Add issue to project board
         uses: actions/add-to-project@v0.1.0
         with:
