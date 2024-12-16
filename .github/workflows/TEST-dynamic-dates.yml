@@ -3,6 +3,24 @@ on:
   pull_request:
   workflow_dispatch:
 
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GH_REPO: ${{ github.repository }}
+  TITLE: TEST - ${{ env.DATE }}
+  LABELS: "Role: Dev,Type: Task,Status: Triage"
+  BODY: |
+    # Summary
+
+    POAM update tracker for ${{ env.DATE }}
+
+    - [ ] USWDS
+    - [ ] USWDS-Site
+    - [ ] Web-Components
+    - [ ] USWDS-Compile
+    - [ ] USWDS-Sandbox
+    - [ ] USWDS-Tutorial
+    - [ ] Public Sans
+
 jobs:
   create_issue:
     name: Create monthly POAM issue
@@ -24,21 +42,3 @@ jobs:
         with:
           project-url: https://github.com/orgs/uswds/projects/8
           github-token: ${{ secrets.ADD_TO_PROJECT }}
-          
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          TITLE: TEST - ${{ env.DATE }}
-          LABELS: "Role: Dev,Type: Task,Status: Triage"
-          BODY: |
-            # Summary
-
-            POAM update tracker for ${{ env.DATE }}
-
-            - [ ] USWDS
-            - [ ] USWDS-Site
-            - [ ] Web-Components
-            - [ ] USWDS-Compile
-            - [ ] USWDS-Sandbox
-            - [ ] USWDS-Tutorial
-            - [ ] Public Sans
