@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Create monthly POAM issue
         run: |
-          echo "DATE=$(date '+%B %y)" >> ${GITHUB_ENV}
+          echo "DATE=$(date '+%B %y')" >> ${GITHUB_ENV}
           new_issue_url=$(gh issue create \
             --title "$TITLE" \
             --assignee "$ASSIGNEES" \
