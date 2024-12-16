@@ -1,6 +1,5 @@
 name: Monthly Security POAM
 on:
-  pull_requests:
   workflow_dispatch:
 
 jobs:
