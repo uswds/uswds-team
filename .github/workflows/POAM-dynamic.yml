@@ -1,4 +1,4 @@
-name: Monthly Security POAM
+name: Test - POAM Dynamic Dates
 on: workflow_dispatch
 
 jobs:
