@@ -1,4 +1,4 @@
-name: Test - POAM Dynamic Dates
+name: Test - POAM Dynamic Date
 on: [workflow_dispatch]
 
 jobs:
