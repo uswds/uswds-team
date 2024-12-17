@@ -1,0 +1,43 @@
+name: Testing - POAM w/ dynamic dates
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  create_issue:
+    name: Create monthly POAM issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dynamically set DATE environment variable
+        run: echo "DATE=$(date '+%B %Y')" >> $GITHUB_ENV
+      - name: Create monthly POAM issue
+        run: |
+          new_issue_url=$(gh issue create \
+            --title "$TITLE" \
+            --assignee "$ASSIGNEES" \
+            --label "$LABELS" \
+            --body "$BODY")
+            
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          TITLE: TEST - ${{ env.DATE }}
+          LABELS: "Role: Dev,Type: Task,Status: Triage"
+          BODY: |
+            # Summary
+        
+            POAM update tracker for ${{ env.DATE }}
+        
+            - [ ] USWDS
+            - [ ] USWDS-Site
+            - [ ] Web-Components
+            - [ ] USWDS-Compile
+            - [ ] USWDS-Sandbox
+            - [ ] USWDS-Tutorial
+            - [ ] Public Sans
+    
+      - name: Add issue to project board
+        uses: actions/add-to-project@v0.1.0
+        with:
+          project-url: https://github.com/orgs/uswds/projects/8
+          github-token: ${{ secrets.ADD_TO_PROJECT }}
