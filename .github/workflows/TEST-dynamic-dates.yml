@@ -7,8 +7,6 @@ jobs:
   create_issue:
     name: Create monthly POAM issue
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
     steps:
       - name: Dynamically set DATE environment variable
         run: echo "DATE=$(date '+%B %Y')" >> $GITHUB_ENV
