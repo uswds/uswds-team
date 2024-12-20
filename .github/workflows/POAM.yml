@@ -1,4 +1,4 @@
-name: Testing - POAM w/ dynamic dates
+name: Monthly Security POAM
 on:
   schedule:
     - cron: 0 0 1 * *
@@ -8,6 +8,8 @@ jobs:
   create_issue:
     name: Create monthly POAM issue
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - name: Dynamically set DATE environment variable
         run: echo "DATE=$(date '+%B %Y')" >> $GITHUB_ENV
@@ -22,11 +24,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
-          TITLE: TEST - ${{ env.DATE }}
+          TITLE: POAM - ${{ env.DATE }}
           LABELS: "Role: Dev,Type: Task,Status: Triage"
           BODY: |
             # Summary
-        
+
             POAM update tracker for ${{ env.DATE }}
 
             - [ ] USWDS
