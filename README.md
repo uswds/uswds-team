@@ -1,7 +1,19 @@
-# Welcome to the USWDS Team repo
-This new repo is an experiment in using GitHub to better manage team- and product-related issues and assets that either do not apply directly to USWDS code, guidance, or documentation; or to big-picture product [roadmap items](https://github.com/orgs/uswds/projects/4) that may cross multiple repos.
+# USWDS team tracker — retired
 
-We consider this repo to be mostly an internal resource, but anyone should feel free to open issues and comment, especially on issues and stories that affect the broader USWDS community.
+This repository is retained as a historical record. Active work now lives with the product it changes:
+
+| Work | Repository |
+|---|---|
+| Core components, accessibility automation, and releases | [uswds](https://github.com/uswds/uswds/issues) |
+| Documentation, content rules, and research references | [uswds-site](https://github.com/uswds/uswds-site/issues) |
+| Web components and the continuing token implementation | [uswds-elements](https://github.com/uswds/uswds-elements/issues) |
+| Proposals and architecture decisions | [uswds-proposals](https://github.com/uswds/uswds-proposals) |
+
+The September 2026 consolidation reviewed all 36 remaining issues. Surviving work was transferred or linked to existing product issues; obsolete process tasks were closed; three deferred ideas were preserved outside the active queue. See the [issue destination map](RETIREMENT.md).
+
+The operating target is autonomous CI/CD with automated accessibility evaluation and no routine manual testing per release. This retirement records where implementation belongs; it does not claim that the automation or unresolved product work is already complete.
+
+Historical issues, comments, wiki material, and project links remain available. Use the product repositories above for new work.
 
 ## Public domain
 
